@@ -1,0 +1,22 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <!-- for(product: products) -->
+  <h3 style="color:red">{{product.id}}</h3>
+  <h2>{{product.name}}</h2>
+  <h2>{{product.price}}</h2>
+  <h2>{{product.description}}</h2>
+</div>
+<div *ngFor="let b for booking" class="body">
+  <h3>{{b.bookingId}}</h3>
+  <label for="booking">Choose a bookingId:</label>
+  <select id="booking" name="booking">
+    <option value="1">{{b.bookingId}}</option>
+  </select>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
